@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
@@ -91,6 +91,7 @@ export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
   return (
     <NavStyles>
+      <nav>
       <div
         className="mobile-menu-icon"
         onClick={() => setShowNav(!showNav)}
@@ -154,9 +155,11 @@ export default function NavMenu() {
             tabIndex={0}
           >
             Contact
-          </NavLink>
+          </Link>
         </li>
       </ul>
+      </nav>
+      <Outlet />
     </NavStyles>
   );
 }
