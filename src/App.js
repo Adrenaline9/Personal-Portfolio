@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Router, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
 import ScrollToTop from './components/ScrollToTop';
@@ -14,14 +14,14 @@ export default function App() {
     <BrowserRouter>
         <NavMenu />
         <ScrollToTop />
-              <Router>
-
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/projects" component={Projects} />
-      </Router>
+        <Routes>
+          <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contacs" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          </Route>
+        </Routes>
 
         <Footer />
           </BrowserRouter>
