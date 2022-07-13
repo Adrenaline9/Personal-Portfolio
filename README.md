@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-vnnqhq)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/Personal-Portfolio
