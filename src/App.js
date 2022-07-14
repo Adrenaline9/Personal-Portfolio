@@ -8,6 +8,7 @@ const App = () => (
   <div>
    <NavMenu />
    <ScrollToTop />
+   <Main />
    <Footer />
   </div>
   )
