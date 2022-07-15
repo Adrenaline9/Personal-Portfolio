@@ -154,7 +154,7 @@ export default function HeroSection() {
             <span className="hero__name">Ayan Khan</span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <img src={""} alt="" />
           </div>
           <div className="hero__info">
             <PText>
@@ -167,7 +167,7 @@ export default function HeroSection() {
           <div className="hero__social">
             <div className="hero__social__indicator">
               <p>Follow</p>
-              <img src={SocialMediaArrow} alt="icon" />
+              <img src={""} alt="icon" />
             </div>
             <div className="hero__social__text">
               <ul>
@@ -212,7 +212,7 @@ export default function HeroSection() {
           </div>
           <div className="hero__scrollDown">
             <p>Scroll</p>
-            <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
+            <img src={""} alt="ScrollDown Arrow" />
           </div>
         </div>
       </div>
