@@ -8,7 +8,7 @@ import Projects from './pages/Projects';
 import "./style.css";
 
 const Main = () => (
-    <BrowseRouter>
+    <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -18,7 +18,7 @@ const Main = () => (
           <Route path="*" element={<NoPage />} />
           </Route>       
         </Routes>
-    </BrowseRouter>
+    </BrowserRouter>
   );
 
 export default Main
