@@ -13,14 +13,13 @@ import "./style.css";
 export default function App() {
   return (
     <BrowserRouter>
+    <NavMenu />
         <Routes>
-          <Route path="/" element={<NavMenu />}>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
-          </Route>       
         </Routes>
     </BrowserRouter>
  );
