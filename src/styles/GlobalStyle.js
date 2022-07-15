@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 *{
     padding: 0;
     margin: 0;
@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     --black: black;
   }
   html{
-    font-size: 10px;
+    font-size: 300px;
     font-family: 'Roboto Mono';
     background-color: var(--dark-bg);
   }
@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
     width: 90%;
     margin: 0 auto;
   }
-/* Smooth Scroll  */
+
   [data-scrollbar] {
     height: 100vh;
     overflow: hidden;
@@ -54,4 +54,4 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 `;
-export default GlobalStyles;
+export default GlobalStyle;
