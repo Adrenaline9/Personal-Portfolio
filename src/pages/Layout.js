@@ -87,9 +87,10 @@ const NavStyles = styled.nav`
   }
 `;
 
-const Layout = () => {
+export default function NavMenu() {
+  const [showNav, setShowNav] = useState(false);
   return (
-     <NavStyles>
+    <NavStyles>
       <div
         className="mobile-menu-icon"
         onClick={() => setShowNav(!showNav)}
@@ -110,40 +111,53 @@ const Layout = () => {
         >
           <MdClose />
         </div>
-          <li>
-            <Link to="/"
+        <li>
+          <Link
+            to="/"
             exact="true" 
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}>Home</Link>
-          </li>
-          <li>
-            <Link to="/about" onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}>About</Link>
-          </li>
-          <li>
-            <Link to="/contact"
+            tabIndex={0}
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/about"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}>Contact</Link>
-          </li>
-          <li>
-            <Link to="/projects"
+            tabIndex={0}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/projects"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}>Projects</Link>
-          </li>
-        </ul>
-      </nav>
-
+            tabIndex={0}
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/contact"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Contact
+          </Link>
+        </li>
+      </ul>
       <Outlet />
-    </>
-  )
-};
-
-export default Layout;
+    </NavStyles>
+  );
+}
