@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NoPage from "./pages/NoPage";
+import NavMenu from "./components/NavMenu";
 
 import "./style.css";
 
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
+          <Route path="/" element={<NavMenu />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
