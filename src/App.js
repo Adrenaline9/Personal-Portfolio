@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NoPage from "./pages/NoPage";
 import NavMenu from "./components/NavMenu";
+import Footer from "./components/Footer";
+
 
 import "./style.css";
 
@@ -21,6 +23,7 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
  );
 }
