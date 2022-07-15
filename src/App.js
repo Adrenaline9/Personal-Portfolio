@@ -8,6 +8,8 @@ import Projects from './pages/Projects';
 import NoPage from "./pages/NoPage";
 import NavMenu from "./components/NavMenu";
 import Footer from "./components/Footer";
+import ScrollToTop from './components/ScrollToTop';
+
 
 
 import "./style.css";
@@ -16,6 +18,7 @@ export default function App() {
   return (
     <BrowserRouter>
     <NavMenu />
+    <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
