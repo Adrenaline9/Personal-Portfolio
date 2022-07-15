@@ -91,6 +91,7 @@ export default function NavMenu() {
   const [showNav, setShowNav] = useState(false);
   return (
     <NavStyles>
+      <nav>
       <div
         className="mobile-menu-icon"
         onClick={() => setShowNav(!showNav)}
@@ -157,7 +158,10 @@ export default function NavMenu() {
           </Link>
         </li>
       </ul>
-      <Outlet />
+            </nav>
+
+                <Outlet />
+
     </NavStyles>
   );
 }
