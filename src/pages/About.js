@@ -105,7 +105,7 @@ export default function About() {
               <Button btnText="Download CV" btnLink="#" />
             </div>
             <div className="right">
-              <img src={AboutImg} alt="me" />
+              <img src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="me" />
             </div>
           </div>
           <div className="about__info__items">
