@@ -5,9 +5,12 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Projects from './pages/Projects';
+import NoPage from "./pages/NoPage";
+
 import "./style.css";
 
-const Main = () => (
+export default function Main() {
+  return (
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -19,6 +22,5 @@ const Main = () => (
           </Route>       
         </Routes>
     </BrowserRouter>
-  );
-
-export default Main
+ );
+}
