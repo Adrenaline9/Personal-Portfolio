@@ -154,7 +154,7 @@ export default function HeroSection() {
             <span className="hero__name">Ayan Khan</span>
           </h1>
           <div className="hero__img">
-            <img src={""} alt="" />
+            <img src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="" />
           </div>
           <div className="hero__info">
             <PText>

@@ -49,7 +49,7 @@ const NavStyles = styled.nav`
     }
   }
   .navItems .closeNavIcon {
-          background-color: var(--deep-green);
+    background-color: var(--deep-green);
     display: none;
   }
   @media only screen and (max-width: 768px) {
