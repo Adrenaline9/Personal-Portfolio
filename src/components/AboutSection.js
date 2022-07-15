@@ -89,7 +89,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={""} alt="Img" />
+          <img className="aboutImg" src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="Img" />
         </div>
       </div>
     </AboutSectionStyles>
