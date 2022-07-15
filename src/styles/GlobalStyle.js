@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     --black: black;
   }
   html{
-    font-size: 300px;
+    font-size: 10px;
     font-family: 'Roboto Mono';
     background-color: var(--dark-bg);
   }
