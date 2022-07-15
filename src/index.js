@@ -7,12 +7,15 @@ import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Projects from './pages/Projects';
 import NoPage from "./pages/NoPage";
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 import "./style.css";
 
 export default function App() {
   return (
     <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -22,6 +25,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
           </Route>       
         </Routes>
+        <Footer />
     </BrowserRouter>
  );
 }
