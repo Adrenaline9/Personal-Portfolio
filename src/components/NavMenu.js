@@ -10,7 +10,7 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background: var(--deep-green);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--deep-dark);
+        background-color: var(--green-1);
       }
     }
     a {
@@ -29,7 +29,7 @@ const NavStyles = styled.nav`
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gray-1);
+      color: var(--lightgreen-bg);
       outline: none;
     }
     .active {
@@ -49,6 +49,7 @@ const NavStyles = styled.nav`
     }
   }
   .navItems .closeNavIcon {
+          background-color: var(--deep-green);
     display: none;
   }
   @media only screen and (max-width: 768px) {
@@ -62,7 +63,7 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark);
+      background-color: var(--deep-green);
       padding: 2rem;
       width: 90%;
       max-width: 300px;
@@ -71,6 +72,7 @@ const NavStyles = styled.nav`
       right: 1rem;
       top: var(--top);
       .closeNavIcon {
+        color: var(--lightgreen-bg);
         display: block;
         width: 3rem;
         margin: 0 0 0 auto;

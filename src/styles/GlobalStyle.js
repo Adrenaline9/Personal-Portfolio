@@ -7,17 +7,17 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #e1eedd;
-    --gray-1: #BCB4B4;
-    --deep-dark: #416a59;
-    --gray-2: #363636;
+    --lightgreen-bg: #e1eedd;
+    --green-1: #397754;
+    --deep-green: #416a59;
+    --green-2: #363636;
     --white : white;
     --black: black;
   }
   html{
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    background-color: var(--lightgreen-bg);
   }
   ul,li{
     list-style: none;
