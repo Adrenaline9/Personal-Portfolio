@@ -9,6 +9,7 @@ import 'swiper/swiper-bundle.min.css';
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
+const projects = [];
 const ProjectSectionStyle = styled.div`
   padding: 10rem 0;
   .projects__allItems {
