@@ -17,7 +17,11 @@ const GlobalStyle = createGlobalStyle`
   html{
     font-size: 14px;
     font-family: 'Roboto Mono';
-    background-color: var(--lightgreen-bg);
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+  }
+
   }
   ul,li{
     list-style: none;

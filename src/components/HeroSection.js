@@ -1,9 +1,14 @@
 import React from 'react';
+import { FaLessThanEqual } from 'react-icons/fa';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 
 const HeroStyles = styled.div`
+width: 80%;
+margin: auto;
+background-color: var(--green-1);
+
   .hero {
     height: 100vh;
     min-height: 1000px;
@@ -144,14 +149,28 @@ const HeroStyles = styled.div`
   }
 `;
 
+const time = new Date().getHours();
+let greeting;
+if (time < 12) {
+  greeting = "Hi, Good Morning!"
+} else if (time < 16) {
+  greeting = "Hi, Good Afternoon!"
+} else if (time < 20) {
+  greeting = "Hello, Good Evening!"
+} else {
+  greeting = "Hello, Good Night"
+}
+
+const Greet = () => greeting;
+
 export default function HeroSection() {
   return (
     <HeroStyles>
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, This is</span>
-            <span className="hero__name">Ayan Khan</span>
+            <span className="hero__name">
+              <Greet /> </span>
           </h1>
           <div className="hero__img">
             <img src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="" />
