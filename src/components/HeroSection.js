@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
+import Text from '../assets/data/text';
 
 const HeroStyles = styled.div`
 width: 80%;
 margin: auto;
-background-color: var(--green-1);
 height: 100vh;
 
   .hero {
@@ -21,7 +21,6 @@ height: 100vh;
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 30px;
-      color: var(--white);
     }
   }
   .hero__img {
@@ -56,7 +55,7 @@ export default function HeroSection() {
               <Greet /> </span>
           </h1>
           <div className="hero__img">
-            <img src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="" />
+            <Text />
           </div>
           <div className="hero__info">
             <PText>

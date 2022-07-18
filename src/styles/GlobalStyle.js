@@ -36,27 +36,12 @@ const GlobalStyle = createGlobalStyle`
   }
   button{
     outline: none
-    
+    background-color: var(--black);
   }
   .container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-  }
-
-  [data-scrollbar] {
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--gray-1);
-    .scroll-content {
-      background-color: var(--dark-bg);
-    }
-    .scrollbar-track.scrollbar-track-y {
-      background: var(--deep-dark);
-      .scrollbar-thumb-y {
-        background: var(--gray-1);
-      }
-    }
   }
 `;
 export default GlobalStyle;
