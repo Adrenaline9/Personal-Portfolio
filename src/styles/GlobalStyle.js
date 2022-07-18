@@ -17,11 +17,8 @@ const GlobalStyle = createGlobalStyle`
   html{
     font-size: 14px;
     font-family: 'Roboto Mono';
-    background-color: var(--black);
-    color: var(--white);
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    background-color: var(--white);
+    color: var(--black);
     width: 100%;
   }
 
@@ -39,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
   }
   button{
     outline: none
+    
   }
   .container {
     max-width: 1200px;
