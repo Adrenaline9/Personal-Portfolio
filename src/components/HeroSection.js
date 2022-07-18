@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaLessThanEqual } from 'react-icons/fa';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
