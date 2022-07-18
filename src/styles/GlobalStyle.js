@@ -19,6 +19,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto Mono';
     background-color: var(--black);
     color: var(--white);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     width: 100%;
   }
 
