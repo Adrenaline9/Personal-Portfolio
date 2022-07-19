@@ -7,10 +7,15 @@ const ButtonStyle = styled.div`
   .button {
     font-size: 20px;
     background-color: var(--black);
+    border: 3px solid var(--crimson);
     padding: 0.7em 2em;
-    border-radius: 4px;
+    border-radius: 7px;
     display: inline-block;
     color: var(--white);
+    &:hover {
+    background-color: var(--crimson);
+    border: 3px solid var(--black);
+    }
   }
 `;
 

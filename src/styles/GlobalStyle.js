@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
     --lavender: lavenderblush; 
     --white : white;
     --black: black;
-    --gray: crimson;
+    --crimson: crimson;
+    --gray: gray;
   }
   html{
     font-size: 14px;
