@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const ButtonStyle = styled.div`
   margin-top: 1rem;
   .button {
-    font-size: 2.2rem;
+    font-size: 20px;
     background-color: var(--black);
     padding: 0.7em 2em;
     border-radius: 4px;

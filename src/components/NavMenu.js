@@ -10,7 +10,7 @@ const NavStyles = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--deep-green);
+  background: var(--black);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,15 +21,16 @@ const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--green-1);
+        background-color: var(--gray);
       }
     }
     a {
       display: inline-block;
-      font-family: 'RobotoMono Regular';
+      font-family: Georgia;
       padding: 1rem 2rem;
+      font-weight: bold;
       font-size: 2rem;
-      color: var(--lightgreen-bg);
+      color: var(--lavender);
       outline: none;
     }
     .active {
@@ -49,7 +50,7 @@ const NavStyles = styled.nav`
     }
   }
   .navItems .closeNavIcon {
-    background-color: var(--deep-green);
+    background-color: var(--black);
     display: none;
   }
   @media only screen and (max-width: 768px) {
@@ -63,7 +64,7 @@ const NavStyles = styled.nav`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-green);
+      background-color: var(--black);
       padding: 2rem;
       width: 90%;
       max-width: 300px;
@@ -72,7 +73,7 @@ const NavStyles = styled.nav`
       right: 1rem;
       top: var(--top);
       .closeNavIcon {
-        color: var(--lightgreen-bg);
+        color: var(--lavender);
         display: block;
         width: 3rem;
         margin: 0 0 0 auto;
@@ -94,72 +95,72 @@ export default function NavMenu() {
   return (
     <NavStyles>
       <nav>
-      <div
-        className="mobile-menu-icon"
-        onClick={() => setShowNav(!showNav)}
-        role="button"
-        onKeyDown={() => setShowNav(!showNav)}
-        tabIndex={0}
-      >
-        <MdMenu />
-      </div>
-
-      <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
-          className="closeNavIcon"
+          className="mobile-menu-icon"
           onClick={() => setShowNav(!showNav)}
           role="button"
           onKeyDown={() => setShowNav(!showNav)}
           tabIndex={0}
         >
-          <MdClose />
+          <MdMenu />
         </div>
-        <li>
-          <Link
-            to="/"
-            exact="true" 
+
+        <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+          <div
+            className="closeNavIcon"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/about"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
+            <MdClose />
+          </div>
+          <li>
+            <Link
+              to="/"
+              exact="true"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
       <Outlet />
     </NavStyles>

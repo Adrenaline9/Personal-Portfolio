@@ -93,8 +93,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <p className="info_text">
-              I am working as a freelance web designer and developer for more than 4
-              years. I love to design and make new web experiences.
+              I am working as a freelance web designer and developer for more
+              than 4 years. I love to design and make new web experiences.
             </p>
             <Button className="button" btnText="Projects" btnLink="/projects" />
           </div>
