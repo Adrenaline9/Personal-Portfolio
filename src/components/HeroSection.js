@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
-import PText from './PText';
-import './style.css';
+import '../style.css';
 
 const HeroStyles = styled.div`
 width: 80%;
@@ -16,13 +15,14 @@ height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-  }
+    position: relative; 
+    font-size: 5vw;
+
+      }
     .hero__name {
-      font-family: 'Montserrat SemiBold';
-      font-size: 30px;
+      font-size: 5vw;
       display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: 2vh;
     }
   }
   .hero__img {
@@ -32,7 +32,6 @@ height: 100vh;
     font-size: 13vw;
     display: inline-block;
     margin: auto;
-    font-family: BlinkMacSystemFont;
 
     .img_text {
     margin: 7vh auto;
@@ -44,19 +43,33 @@ height: 100vh;
 
     }
   }
+  .hero__info {
+    .info_text {
+      display: inline-block;
+      margin: 2vh auto;
+    }
+    .button {
+      display: inline-block;
+      width: 50%;
+      color: var(--white);
+      background-color: var(--black);
+      padding: 1vh;
+      margin: 5vh auto;
+    }
+  }
   }
 `;
 
 const time = new Date().getHours();
 let greeting;
 if (time < 12) {
-  greeting = "Hi, Good Morning!"
+  greeting = 'Hi, Good Morning!';
 } else if (time < 16) {
-  greeting = "Hi, Good Afternoon!"
+  greeting = 'Hi, Good Afternoon!';
 } else if (time < 21) {
-  greeting = "Hello, Good Evening!"
+  greeting = 'Hello, Good Evening!';
 } else {
-  greeting = "Hello, Good Night!"
+  greeting = 'Hello, Good Night!';
 }
 
 const Greet = () => greeting;
@@ -68,21 +81,22 @@ export default function HeroSection() {
         <div className="container">
           <h1>
             <span className="hero__name">
-              <Greet /> </span>
+              <Greet />
+            </span>
           </h1>
           <div className="hero__img">
             <div className="img_text">
-            <p className="adr">Adrenaline</p>
-            <p className="nine">Nine</p>
+              <p className="adr">Adrenaline</p>
+              <p className="nine">Nine</p>
             </div>
           </div>
           <div className="hero__info">
-            <PText>
+            <p className="info_text">
               I am working as a freelance web designer and developer for 4
               years. I love to design and make new web experiences for the
               people.
-            </PText>
-            <Button btnText="see my works" btnLink="/projects" />
+            </p>
+            <Button className="button" btnText="Projects" btnLink="/projects" />
           </div>
         </div>
       </div>
