@@ -21,7 +21,8 @@ const NavStyles = styled.nav`
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
-        background-color: var(--gray);
+        background-color: var(--crimson);
+        border: 2px solid var(--lavender);
       }
     }
     a {
