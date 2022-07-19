@@ -4,10 +4,12 @@ import Button from './Button';
 import '../style.css';
 
 const HeroStyles = styled.div`
-width: 80%;
-margin: auto;
+position: relative;
+right: 0;
+width: 100%;
+margin: 0;
 height: 100vh;
-
+border: 4px solid;
   .hero {
     height: 100vh;
     width: 100%;
@@ -35,12 +37,6 @@ height: 100vh;
 
     .img_text {
     margin: 7vh auto;
-    }
-    .adr {
-
-    }
-    .nine {
-
     }
   }
   .hero__info {

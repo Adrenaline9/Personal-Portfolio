@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import "../style.css";
+import '../style.css';
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -19,6 +19,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--green-2);
     color: var(--black);
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   }
@@ -34,9 +36,9 @@ const GlobalStyle = createGlobalStyle`
     object-fit: cover;
   }
   .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
+    max-width: 1500px;
+    width: 70%;
+    margin: auto;
   }
 `;
 export default GlobalStyle;
