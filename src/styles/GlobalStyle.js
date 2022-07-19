@@ -8,14 +8,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --lightgreen-bg: midnightblue;
-    --green-1: #397754;
-    --deep-green: #416a59;
-    --green-2: lavenderblush;
-    
-    --white : gainsboro;
+    --lavender: lavenderblush; 
+    --white : white;
     --black: black;
-    --white-2: white;
+    --gray: ;
   }
   html{
     font-size: 14px;
