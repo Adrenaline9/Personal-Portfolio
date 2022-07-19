@@ -8,7 +8,7 @@ width: 80%;
 margin: auto;
 height: 100vh;
 
-  .hero {
+  .hero {}
     height: 100vh;
     width: 100%;
     text-align: center;
