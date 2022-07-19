@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
-import Text from '../assets/data/text';
+import './style.css';
 
 const HeroStyles = styled.div`
 width: 80%;
@@ -21,12 +21,28 @@ height: 100vh;
     .hero__name {
       font-family: 'Montserrat SemiBold';
       font-size: 30px;
+      display: inline-block;
+      margin-bottom: 20px;
     }
   }
   .hero__img {
     width: 100%;
     height: 30vh;
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
+    font-size: 13vw;
+    display: inline-block;
+    margin: auto;
+    font-family: BlinkMacSystemFont;
+
+    .img_text {
+    margin: 7vh auto;
+    }
+    .adr {
+
+    }
+    .nine {
+
+    }
   }
   }
 `;
@@ -50,12 +66,15 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <h1 className="hero__heading">
+          <h1>
             <span className="hero__name">
               <Greet /> </span>
           </h1>
           <div className="hero__img">
-            <Text />
+            <div className="img_text">
+            <p className="adr">Adrenaline</p>
+            <p className="nine">Nine</p>
+            </div>
           </div>
           <div className="hero__info">
             <PText>
