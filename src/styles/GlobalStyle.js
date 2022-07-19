@@ -8,16 +8,18 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --lightgreen-bg: #e1eedd;
+    --lightgreen-bg: midnightblue;
     --green-1: #397754;
     --deep-green: #416a59;
-    --green-2: #363636;
-    --white : white;
+    --green-2: lavenderblush;
+    
+    --white : gainsboro;
     --black: black;
+    --white-2: white;
   }
   html{
     font-size: 14px;
-    background-color: var(--white);
+    background-color: var(--green-2);
     color: var(--black);
     width: 100%;
   }

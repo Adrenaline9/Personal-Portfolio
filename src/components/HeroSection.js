@@ -4,7 +4,7 @@ import Button from './Button';
 import '../style.css';
 
 const HeroStyles = styled.div`
-width: 95%;
+width: 80%;
 margin: auto;
 height: 100vh;
 
@@ -45,15 +45,15 @@ height: 100vh;
   }
   .hero__info {
     .info_text {
-      font-family: cursive;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       display: inline-block;
       margin: 2vh auto;
     }
     .button {
       display: inline-block;
       width: 50%;
-      color: var(--white);
-      background-color: var(--black);
+      font-weight: 300;
+      font-size: 6vw;
       padding: 1vh;
       margin: 5vh auto;
     }
