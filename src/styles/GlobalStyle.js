@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import "../style.css";
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -16,7 +17,6 @@ const GlobalStyle = createGlobalStyle`
   }
   html{
     font-size: 14px;
-    font-family: 'Roboto Mono';
     background-color: var(--white);
     color: var(--black);
     width: 100%;

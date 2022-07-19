@@ -4,11 +4,11 @@ import Button from './Button';
 import '../style.css';
 
 const HeroStyles = styled.div`
-width: 80%;
+width: 95%;
 margin: auto;
 height: 100vh;
 
-  .hero {}
+  .hero {
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -45,6 +45,7 @@ height: 100vh;
   }
   .hero__info {
     .info_text {
+      font-family: cursive;
       display: inline-block;
       margin: 2vh auto;
     }
@@ -92,9 +93,8 @@ export default function HeroSection() {
           </div>
           <div className="hero__info">
             <p className="info_text">
-              I am working as a freelance web designer and developer for 4
-              years. I love to design and make new web experiences for the
-              people.
+              I am working as a freelance web designer and developer for more than 4
+              years. I love to design and make new web experiences.
             </p>
             <Button className="button" btnText="Projects" btnLink="/projects" />
           </div>

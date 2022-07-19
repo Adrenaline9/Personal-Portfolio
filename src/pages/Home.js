@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <AboutSection />
       <ServicesSection />
+      <AboutSection /> 
       <ProjectsSection />
       <TestimonialsSection />
       <ContactBanner />

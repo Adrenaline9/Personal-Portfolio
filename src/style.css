@@ -7,3 +7,7 @@ p {
 .adr, .nine {
   font-family: cursive;
 }
+html, * {
+    font-family: cursive;
+
+}
