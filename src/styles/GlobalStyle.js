@@ -27,14 +27,10 @@ const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
   }
-  img, svg{
+  svg{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  button{
-    outline: none
-    background-color: var(--black);
   }
   .container {
     max-width: 1200px;
