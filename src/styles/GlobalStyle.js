@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import '../style.css';
 
 const GlobalStyle = createGlobalStyle`
-*{    width: 100%;
-
+*{    
+    width: 100%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,10 +17,8 @@ const GlobalStyle = createGlobalStyle`
   }
   html{
     font-size: 14px;
-    background-color: var(--green-2);
+    background-color: var(--lavender);
     color: var(--black);
-    margin: 0;
-    padding: 0;
   }
 
   }

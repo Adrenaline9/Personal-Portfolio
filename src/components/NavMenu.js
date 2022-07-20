@@ -17,7 +17,6 @@ const NavStyles = styled.nav`
     width: 60%;
     text-align: center;      
     display: flex;
-
     li {
       padding: 5px;
       border-radius: 8px;
@@ -71,8 +70,7 @@ const NavStyles = styled.nav`
       border-radius: 12px;
       position: absolute;
       right: 1rem;
-              display: inline-block;
-
+      display: inline-block;
       top: var(--top);
       .closeNavIcon {
         color: var(--lavender);
@@ -84,14 +82,11 @@ const NavStyles = styled.nav`
           pointer-events: none;
         }
       }
-      
       li {         
-        display: block;
         margin-bottom: 1rem;
         &:hover {
           width:70%;
           margin: auto;
-
     }
   }
 }
