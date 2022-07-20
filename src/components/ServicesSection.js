@@ -9,7 +9,7 @@ const ServicesItemsStyles = styled.div`
   border: 4px solid;
   .services__allItems {
     display: flex;
-    gap: 10rem;
+    gap: 5rem;
     justify-content: space-between;
     margin-top: 5rem;
   }
