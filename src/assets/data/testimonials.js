@@ -1,23 +1,23 @@
 const testimonials = [
   {
     id: 1,
-    name: 'Shaif Arfan',
+    name: 'William Brown',
     title: 'CEO',
-    org: 'WEB CIFAR',
+    org: 'De Montreal',
     desc:
-      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+      'Adrenaline Nine is a person of commitment. He is really good at what he does. I really like his work especially, his unique point of designing.',
   },
   {
     id: 2,
-    name: 'Fahim Elahe',
+    name: 'Oscar Walter',
     title: 'Co-founder',
-    org: 'Kreetive',
+    org: 'Crest',
     desc:
       'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
   },
   {
     id: 3,
-    name: 'Sayed',
+    name: 'James Bob',
     title: 'Marketing Head',
     org: 'Eleven Dawn',
     desc:

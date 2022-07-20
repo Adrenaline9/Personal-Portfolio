@@ -4,6 +4,11 @@ import '../style.css';
 
 const SectionTitleStyle = styled.div`
   text-align: center;
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--crimson);
+  border-radius: 10px;
+  padding: 9px 0 9px 0;
   p {
     font-family: 'Courier';
     font-size: 2rem;

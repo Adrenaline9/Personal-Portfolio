@@ -5,22 +5,20 @@ import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 
 const ServicesItemsStyles = styled.div`
-  padding: 10rem 0;
-  border: 4px solid;
   .services__allItems {
     display: flex;
     gap: 5rem;
     justify-content: space-between;
     margin-top: 5rem;
-  }
+    }
   @media only screen and (max-width: 768px) {
     .services__allItems {
       flex-direction: column;
       max-width: 350px;
       margin: 0 auto;
-      margin-top: 5rem;
       gap: 5rem;
-    }
+      margin-top: 5rem;
+      }
   }
 `;
 
@@ -33,17 +31,17 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="web design"
-            desc="I do ui/ux design for the website that helps website to get a unique look."
+            desc="I do ui/ux design for websites giving it a unique look."
           />
           <ServicesSectionItem
             icon={<MdCode />}
             title="web dev"
-            desc="I also develop the websites. I create high performance website with blazing fast speed."
+            desc="I also develop responsive websites with high performance website and blazing speed."
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
             title="app Dev"
-            desc="I develop mobile application. I create mobile app with eye catching ui. "
+            desc="I develop mobile application with eye catching ui. "
           />
         </div>
       </div>
