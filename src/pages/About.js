@@ -6,7 +6,7 @@ import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
-width: 80%;
+  width: 80%;
   .top-section {
     display: flex;
     align-items: center;

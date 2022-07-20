@@ -19,6 +19,7 @@ const NavStyles = styled.nav`
     display: flex;
 
     li {
+      padding: 5px;
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
@@ -27,6 +28,7 @@ const NavStyles = styled.nav`
       }
     }
     a {
+      padding: 4px;
       display: inline-block;
       font-family: Georgia;
       font-weight: bold;
@@ -69,6 +71,8 @@ const NavStyles = styled.nav`
       border-radius: 12px;
       position: absolute;
       right: 1rem;
+              display: inline-block;
+
       top: var(--top);
       .closeNavIcon {
         color: var(--lavender);
@@ -80,15 +84,14 @@ const NavStyles = styled.nav`
           pointer-events: none;
         }
       }
-      ul {
-        display: inline-block;
-      li {
+      
+      li {         
         display: block;
         margin-bottom: 1rem;
         &:hover {
           width:70%;
           margin: auto;
-}
+
     }
   }
 }
