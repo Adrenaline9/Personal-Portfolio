@@ -50,7 +50,7 @@ const TestimonialSectionStyles = styled.div`
     .prev {
       margin: 0 0.5rem;
       width: fit-content;
-      background-color: var(--deep-dark);
+      background-color: var(--white);
       padding: 0.5rem 2rem;
       border-radius: 8px;
       cursor: pointer;
