@@ -6,7 +6,8 @@ import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
-  padding: 20rem 0 10rem 0;
+  width: 100%;
+  padding: 10rem 0;
 
   .top-section {
     display: flex;

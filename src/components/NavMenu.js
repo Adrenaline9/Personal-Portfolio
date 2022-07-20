@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const NavStyles = styled.nav`
-  position: fixed;
+  position: relative;
   z-index: 100;
   top: 0;  
   left: 0;
@@ -13,7 +13,7 @@ const NavStyles = styled.nav`
   background: var(--black);
   ul {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     width: 60%;
     text-align: center;      
     display: flex;
@@ -27,16 +27,12 @@ const NavStyles = styled.nav`
       }
     }
     a {
-      display: flex;
+      display: inline-block;
       font-family: Georgia;
-      padding: 10px;
       font-weight: bold;
       font-size: 2rem;
       color: var(--lavender);
       outline: none;
-    }
-    .active {
-      color: var(--black);
     }
   }
   .mobile-menu-icon {
@@ -84,6 +80,8 @@ const NavStyles = styled.nav`
           pointer-events: none;
         }
       }
+      ul {
+        display: inline-block;
       li {
         display: block;
         margin-bottom: 1rem;
@@ -93,9 +91,7 @@ const NavStyles = styled.nav`
 }
     }
   }
-  }
-  ul {
-    display: inline-block;
+}
   }
 `;
 
