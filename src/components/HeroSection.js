@@ -40,7 +40,7 @@ height: 100vh;
   }
   .hero__info {
     .info_text {
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: Courier, 'Times New Roman', Times, serif;
       display: inline-block;
       margin: 2vh auto;
     }
