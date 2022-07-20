@@ -25,6 +25,9 @@ const TestimonialSectionStyles = styled.div`
   }
   .testimonial__desc {
     .para {
+      border-radius: 0 70px 0 70px;
+      background-color: var(--white);
+      padding: 15px;
       text-align: center;
     }
   }
