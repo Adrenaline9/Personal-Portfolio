@@ -14,10 +14,11 @@ const NavStyles = styled.nav`
   ul {
     max-width: 1200px;
     margin: 0 auto;
-    width: 90%;
-    text-align: center;
+    width: 60%;
+    text-align: center;      
+    display: flex;
+
     li {
-      display: inline-block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
@@ -26,16 +27,16 @@ const NavStyles = styled.nav`
       }
     }
     a {
-      display: inline-block;
+      display: flex;
       font-family: Georgia;
-      padding: 1rem 2rem;
+      padding: 10px;
       font-weight: bold;
       font-size: 2rem;
       color: var(--lavender);
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: var(--black);
     }
   }
   .mobile-menu-icon {
@@ -86,8 +87,15 @@ const NavStyles = styled.nav`
       li {
         display: block;
         margin-bottom: 1rem;
-      }
+        &:hover {
+          width:70%;
+          margin: auto;
+}
     }
+  }
+  }
+  ul {
+    display: inline-block;
   }
 `;
 
