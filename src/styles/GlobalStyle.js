@@ -36,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     object-fit: cover;
   }
   .container {
-    max-width: 1500px;
+    max-width: 2500px;
     width: 70%;
     margin: auto;
   }

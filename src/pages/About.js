@@ -6,9 +6,7 @@ import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
-  width: 100%;
-  padding: 10rem 0;
-
+width: 80%;
   .top-section {
     display: flex;
     align-items: center;
@@ -106,7 +104,12 @@ export default function About() {
               <Button btnText="Download CV" btnLink="#" />
             </div>
             <div className="right">
-              <img src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="me" />
+              <img
+                src={
+                  'https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg'
+                }
+                alt="me"
+              />
             </div>
           </div>
           <div className="about__info__items">
