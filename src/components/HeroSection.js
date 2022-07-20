@@ -9,7 +9,6 @@ right: 0;
 width: 100%;
 margin: 0;
 height: 100vh;
-border: 4px solid;
   .hero {
     height: 100vh;
     width: 100%;
