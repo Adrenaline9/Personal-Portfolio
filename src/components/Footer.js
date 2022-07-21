@@ -4,14 +4,20 @@ import FooterCol from './FooterCol';
 import PText from './PText';
 
 const FooterStyle = styled.div`
+  margin-top: 10rem;
   padding-top: 10rem;
   background-color: var(--black);
   color: var(--lavender);
   width: 100%;
 
-  .container {
+  .containers {    display: flex;
+}
+  
+  .container_wrapper {
     display: flex;
-    gap: 3rem;
+    gap: 3rem;    
+    width: 90%;    
+    margin: auto;
   }
   .footer__col1 {
     flex: 2;
@@ -60,83 +66,85 @@ const FooterStyle = styled.div`
 export default function Footer() {
   return (
     <FooterStyle>
-      <div className="container">
-        <div className="footer__col1">
-          <h1 className="footer__col1__title">Ayan Khan</h1>
-          <PText>
-            A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate.
-          </PText>
-        </div>
-        <div className="footer__col2">
-          <FooterCol
-            heading="Important Links"
-            links={[
-              {
-                title: 'Home',
-                path: '/',
-                type: 'Link',
-              },
-              {
-                type: 'Link',
-                title: 'About',
-                path: '/about',
-              },
-              {
-                type: 'Link',
-                title: 'Projects',
-                path: '/projects',
-              },
-              {
-                type: 'Link',
-                title: 'Contact',
-                path: '/contact',
-              },
-            ]}
-          />
-        </div>
-        <div className="footer__col3">
-          <FooterCol
-            heading="Contact Info"
-            links={[
-              {
-                title: '+88012312',
-                path: 'tel:+88012312',
-              },
-              {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
-              },
-              {
-                title: 'GEC Circle, Chittagong, Bangladesh',
-                path: 'http://google.com/maps',
-              },
-            ]}
-          />
-        </div>
-        <div className="footer__col4">
-          <FooterCol
-            heading="social Links"
-            links={[
-              {
-                title: 'Facebook',
-                path: 'http://facebook.com',
-              },
-              {
-                title: 'Twitter',
-                path: 'http://twitter.com',
-              },
-              {
-                title: 'Instagram',
-                path: 'http://instagram.com',
-              },
-            ]}
-          />
+      <div className="containers">
+        <div className="container_wrapper">
+          <div className="footer__col1">
+            <h1 className="footer__col1__title">Ayan Khan</h1>
+            <PText>
+              A freelance web designer and developer from Chittagong,
+              Bangladesh. I always make websites that have unique designs and
+              also has a good performance rate.
+            </PText>
+          </div>
+          <div className="footer__col2">
+            <FooterCol
+              heading="Important Links"
+              links={[
+                {
+                  title: 'Home',
+                  path: '/',
+                  type: 'Link',
+                },
+                {
+                  type: 'Link',
+                  title: 'About',
+                  path: '/about',
+                },
+                {
+                  type: 'Link',
+                  title: 'Projects',
+                  path: '/projects',
+                },
+                {
+                  type: 'Link',
+                  title: 'Contact',
+                  path: '/contact',
+                },
+              ]}
+            />
+          </div>
+          <div className="footer__col3">
+            <FooterCol
+              heading="Contact Info"
+              links={[
+                {
+                  title: '+88012312',
+                  path: 'tel:+88012312',
+                },
+                {
+                  title: 'webcifar@gmail.com',
+                  path: 'mailto:webcifar@gmail.com',
+                },
+                {
+                  title: 'GEC Circle, Chittagong, Bangladesh',
+                  path: 'http://google.com/maps',
+                },
+              ]}
+            />
+          </div>
+          <div className="footer__col4">
+            <FooterCol
+              heading="social Links"
+              links={[
+                {
+                  title: 'Facebook',
+                  path: 'http://facebook.com',
+                },
+                {
+                  title: 'Twitter',
+                  path: 'http://twitter.com',
+                },
+                {
+                  title: 'Instagram',
+                  path: 'http://instagram.com',
+                },
+              ]}
+            />
+          </div>
         </div>
       </div>
       <div className="copyright">
-        <div className="container">
+        <div className="containers">
           <PText>
             © 2021 - Ayan Khan | Designed By{' '}
             <a target="_blank" rel="noreferrer" href="http://webcifar.com">
