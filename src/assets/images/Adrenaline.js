@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AdrenalineStyles = styled.div`
-  width: 70%;
+  width: 50%;
   margin: auto;
   .adr_text {
     color: white;
-    height: 300px;  
+    height: 200px;  
     background-color: var(--crimson);
     border: 1px solid var(--crimson);
     box-shadow: 8px 8px 70px var(--crimson);

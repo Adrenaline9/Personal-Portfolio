@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 
 const ServicesItemsStyles = styled.div`
-  .services__allItems {
+    .services__allItems {
     display: flex;
     gap: 5rem;
     justify-content: space-between;
@@ -31,7 +31,7 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="web design"
-            desc="I do ui/ux design for websites giving it a unique look."
+            desc="I develop ui/ux design for websites giving it a unique look."
           />
           <ServicesSectionItem
             icon={<MdCode />}

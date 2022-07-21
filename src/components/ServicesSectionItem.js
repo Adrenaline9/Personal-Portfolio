@@ -10,13 +10,15 @@ const ItemStyles = styled.div`
     }
   }
   .servicesItem__title {
+    border-bottom: 2px solid var(--crimson);
     font-size: 2.5rem;
     font-family: 'Times';
+    font-weight: bold;
   }
   .par {
     font-family: 'monospace';
     margin-top: 2rem;  
-    font-size: 1.8rem;
+    font-size: 2.2rem;
      @media only screen and (max-width: 768px) {
   font-size: 1.4rem;
       }

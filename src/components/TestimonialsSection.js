@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import PText from './PText';
 import SectionTitle from './SectionTitle';
 import testimonials from '../assets/data/testimonials';
 import '../style.css';
 
 const TestimonialSectionStyles = styled.div`
   overflow-x: hidden;
-  padding: 10rem 0;
+  padding: 16rem 0;
   text-align: center;
   .testimonial__wrapper {
     position: relative;
@@ -41,7 +40,7 @@ const TestimonialSectionStyles = styled.div`
     border-top: 2px solid var(--crimson);
     padding-top: 10px;
     margin-top: 4rem;
-    font-family: 'Montserrat Bold';
+    font-family: 'Montserrat Bold';        
     font-size: 2.2rem;
   }
   .testimonial__title {    
