@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
+import '../style.css';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -22,6 +23,9 @@ const AboutSectionStyles = styled.div`
   .para {
     margin-top: 2rem;
     margin-left: 0;
+  }
+  .aboutimg_text {
+    font-size: 4.5rem;
   }
   .aboutSection__buttons {
     display: flex;
@@ -79,15 +83,19 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer.developer.developer. I create professional websites. I love art and always
-            try to show unique views to the audience through my design...
+            I am a freelance website designer and developer.developer.developer.
+            I create professional websites. I love art and always try to show
+            unique views to the audience through my design...
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={"https://raw.githubusercontent.com/Adrenaline9/Personal-Portfolio/main/src/assets/images/img-1.jpeg"} alt="Img" />
+          <div className="aboutimg_text">
+            <p>Adrenaline</p>
+            <p>Nine</p>
+          </div>
         </div>
       </div>
     </AboutSectionStyles>
