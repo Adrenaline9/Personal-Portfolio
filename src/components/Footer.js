@@ -26,12 +26,14 @@ const FooterStyle = styled.div`
     margin-bottom: 1rem;
   }
   .copyright {
-    background-color: var(--dark-bg);
-    text-align: left;
+    color: var(--black);
+    background-color: var(--lavender);
+    text-align: center;
     padding: 1rem 0;
     margin-top: 5rem;
-    .para {
-      margin-left: 0;
+    .para {    
+      width: 80%;
+      margin: auto;
     }
   }
   @media only screen and (max-width: 768px) {

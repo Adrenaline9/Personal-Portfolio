@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .container {
     max-width: 2500px;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 `;
