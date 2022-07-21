@@ -1,7 +1,6 @@
 import React from 'react';
 import { MdDesktopMac } from 'react-icons/md';
 import styled from 'styled-components';
-import PText from './PText';
 
 const ItemStyles = styled.div`
   text-align: center;
@@ -14,8 +13,13 @@ const ItemStyles = styled.div`
     font-size: 2.5rem;
     font-family: 'Times';
   }
-  .para {
-    margin-top: 2rem;
+  .par {
+    font-family: 'monospace';
+    margin-top: 2rem;  
+    font-size: 1.8rem;
+     @media only screen and (max-width: 768px) {
+  font-size: 1.4rem;
+      }
   }
 `;
 
@@ -28,7 +32,7 @@ export default function ServicesSectionItem({
     <ItemStyles className="servicesItem">
       <div className="servicesItem__icon">{icon}</div>
       <div className="servicesItem__title">{title}</div>
-      <PText>{desc}</PText>
+      <p className='par'>{desc}</p>
     </ItemStyles>
   );
 }

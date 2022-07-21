@@ -5,6 +5,7 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 import testimonials from '../assets/data/testimonials';
+import '../style.css';
 
 const TestimonialSectionStyles = styled.div`
   overflow-x: hidden;
@@ -23,20 +24,29 @@ const TestimonialSectionStyles = styled.div`
     border-radius: 12px;
     margin-top: 5rem;
   }
-  .testimonial__desc {
-    .para {
+  .testimonial__desc {    
+    .par {        
       border-radius: 0 70px 0 70px;
       background-color: var(--white);
       padding: 15px;
       text-align: center;
+      font-size: 20px;
+      font-style: italic;
+      font-family: Times; 
+      display: block;
+      padding: 20px;       
     }
   }
   .testimonial__name {
+    border-top: 2px solid var(--crimson);
+    padding-top: 10px;
     margin-top: 4rem;
     font-family: 'Montserrat Bold';
     font-size: 2.2rem;
   }
-  .testimonial__title {
+  .testimonial__title {    
+    border-bottom: 2px solid var(--crimson);
+    padding-bottom: 10px;
     font-size: 1.6rem;
     margin-top: 0.3rem;
   }
@@ -114,7 +124,7 @@ export default function TestimonialsSection() {
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonial__info">
                 <div className="testimonial__desc">
-                  <PText>{activeSlide.desc}</PText>
+                  <p className="par">{activeSlide.desc}</p>
                 </div>
                 <h2 className="testimonial__name">{activeSlide.name}</h2>
                 <p className="testimonial__title">

@@ -7,6 +7,7 @@ import ContactBanner from '../components/ContactBanner';
 
 const AboutPageStyles = styled.div`
   width: 80%;
+  margin: auto;
   .top-section {
     display: flex;
     align-items: center;
@@ -79,15 +80,14 @@ export default function About() {
           <div className="top-section">
             <div className="left">
               <p className="about__subheading">
-                Hi, I am <span>Ayan Khan</span>
+                Hi, I am <span>Adrenaline Nine</span>
               </p>
               <h2 className="about__heading">A freelance Web developer</h2>
               <div className="about__info">
-                <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
+                <PText className="par">
+                  I love art and design. I always try to design stuff with my
+                  unique point of view. I also love to create things that can be
+                  usefull to others.
                   <br /> <br />
                   I started coding since I was in high school. Coding is also an
                   art for me. I love it and now I have the opportunity to design
