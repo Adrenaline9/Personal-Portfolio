@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
+import Adrenaline from './assets/images/Adrenaline';
 import SectionTitle from './SectionTitle';
 import '../style.css';
 
@@ -93,8 +94,7 @@ export default function AboutSection() {
         </div>
         <div className="aboutSection__right">
           <div className="aboutimg_text">
-            <p>Adrenaline</p>
-            <p>Nine</p>
+            <Adrenaline />
           </div>
         </div>
       </div>
