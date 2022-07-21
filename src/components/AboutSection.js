@@ -7,6 +7,8 @@ import SectionTitle from './SectionTitle';
 import '../style.css';
 
 const AboutSectionStyles = styled.div`
+  margin: auto;
+  width: 100%;
   padding: 10rem 0;
   .container {
     display: flex;
@@ -21,7 +23,8 @@ const AboutSectionStyles = styled.div`
   .section-title {
     text-align: left;
   }
-  .para {
+  }
+  .para {        
     margin-top: 2rem;
     margin-left: 0;
   }
@@ -79,14 +82,14 @@ export default function AboutSection() {
     <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection__left">
-          <SectionTitle
-            subheading="Let me introduce myself"
-            heading="About Me"
-          />
+            <SectionTitle
+              subheading="Let me introduce myself"
+              heading="About Me"
+            />
           <PText>
-            I am a freelance website designer and developer.developer.developer.
-            I create professional websites. I love art and always try to show
-            unique views to the audience through my design...
+            I am a freelance website designer and developer. I create
+            professional websites and always try to show unique views to the
+            audience through my design...
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Read More" btnLink="/about" outline />
