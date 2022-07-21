@@ -79,12 +79,10 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            I am a freelance website designer and developer.developer.developer. I create professional websites. I love art and always
+            try to show unique views to the audience through my design...
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>

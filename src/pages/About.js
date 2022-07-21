@@ -4,10 +4,10 @@ import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import SectionTitle from '../components/SectionTitle';
 
 const AboutPageStyles = styled.div`
-  width: 80%;
-  margin: auto;
+  padding: 10rem 0;
   .top-section {
     display: flex;
     align-items: center;
@@ -77,6 +77,10 @@ export default function About() {
     <>
       <AboutPageStyles>
         <div className="container">
+          <SectionTitle
+            heading="ABOUT ME"
+            subheading="Let me introduce myself"
+          />
           <div className="top-section">
             <div className="left">
               <p className="about__subheading">
