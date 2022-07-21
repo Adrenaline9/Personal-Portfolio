@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
-import Adrenaline from './assets/images/Adrenaline';
+import Adrenaline from '../assets/images/Adrenaline';
 import SectionTitle from './SectionTitle';
 import '../style.css';
 
