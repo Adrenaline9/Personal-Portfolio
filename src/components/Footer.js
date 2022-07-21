@@ -4,8 +4,11 @@ import FooterCol from './FooterCol';
 import PText from './PText';
 
 const FooterStyle = styled.div`
-  background-color: var(--deep-dark);
   padding-top: 10rem;
+  background-color: var(--black);
+  color: var(--lavender);
+  width: 100%;
+
   .container {
     display: flex;
     gap: 3rem;

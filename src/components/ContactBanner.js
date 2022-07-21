@@ -11,6 +11,10 @@ const ContactBannerStyles = styled.div`
     padding: 5rem 0rem;
     text-align: center;
   }
+  .contact_button {
+    width: 50%;
+    margin: auto;
+  }
   .contactBanner__heading {
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -29,7 +33,9 @@ export default function ContactBanner() {
         <div className="contactBanner__wrapper">
           <PText>Have a project in mind</PText>
           <h3 className="contactBanner__heading">Let me help you</h3>
+          <div className="contact_button">
           <Button btnText="Contact Now" btnLink="/contact" />
+          </div>
         </div>
       </div>
     </ContactBannerStyles>
