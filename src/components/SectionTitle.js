@@ -4,9 +4,9 @@ import '../style.css';
 
 const SectionTitleStyle = styled.div`
   text-align: center;
+  box-shadow: 8px 8px 28px var(--crimson);
   background-color: var(--white);
   color: var(--black);
-  border: 1px solid var(--crimson);
   border-radius: 10px;
   padding: 9px 0 9px 0;
   p {
@@ -25,7 +25,7 @@ const SectionTitleStyle = styled.div`
       font-size: 1.1rem;
     }
     h2 {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
     }
   }
 `;
