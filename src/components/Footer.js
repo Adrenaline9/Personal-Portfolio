@@ -14,7 +14,6 @@ const FooterStyle = styled.div`
 }
   
   .container_wrapper {
-    display: flex;
     gap: 3rem;    
     width: 90%;    
     margin: auto;
@@ -69,14 +68,6 @@ export default function Footer() {
       <div className="containers">
         <div className="container_wrapper">
           <div className="footer__col1">
-            <h1 className="footer__col1__title">Ayan Khan</h1>
-            <PText>
-              A freelance web designer and developer from Chittagong,
-              Bangladesh. I always make websites that have unique designs and
-              also has a good performance rate.
-            </PText>
-          </div>
-          <div className="footer__col2">
             <FooterCol
               heading="Important Links"
               links={[
@@ -103,40 +94,40 @@ export default function Footer() {
               ]}
             />
           </div>
-          <div className="footer__col3">
+          <div className="footer__col2">
             <FooterCol
               heading="Contact Info"
               links={[
                 {
-                  title: '+88012312',
-                  path: 'tel:+88012312',
+                  title: '+2348130324541',
+                  path: 'tel:+2348130324541',
                 },
                 {
-                  title: 'webcifar@gmail.com',
-                  path: 'mailto:webcifar@gmail.com',
+                  title: 'adrenaline.nine0@gmail.com',
+                  path: 'mailto:adrenaline.nine0@gmail.com',
                 },
                 {
-                  title: 'GEC Circle, Chittagong, Bangladesh',
-                  path: 'http://google.com/maps',
+                  itle: 'CHS, Amassoma, Bayelsa State, Nigeria',
+                  ath: 'http://google.com/maps',
                 },
               ]}
             />
           </div>
-          <div className="footer__col4">
+          <div className="footer__col3">
             <FooterCol
               heading="social Links"
               links={[
                 {
                   title: 'Facebook',
-                  path: 'http://facebook.com',
+                  path: 'https://www.facebook.com/profile.php?id=100074182476935',
                 },
                 {
                   title: 'Twitter',
-                  path: 'http://twitter.com',
+                  path: 'https://twitter.com/Adrenaline_nine?t=TgEas4uagrC_mrC1j60gZg&s=09',
                 },
                 {
-                  title: 'Instagram',
-                  path: 'http://instagram.com',
+                  title: 'Telegram',
+                  path: 'https://t.me/Adrenaline_Nine',
                 },
               ]}
             />
@@ -146,9 +137,9 @@ export default function Footer() {
       <div className="copyright">
         <div className="containers">
           <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
+            © 2021 - Adrenaline Nine | Designed By{' '}
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100074182476935">
+              Adrenaline_nine
             </a>{' '}
           </PText>
         </div>

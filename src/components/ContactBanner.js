@@ -34,7 +34,7 @@ export default function ContactBanner() {
           <PText>Have a project in mind</PText>
           <h3 className="contactBanner__heading">Let me help you</h3>
           <div className="contact_button">
-          <Button btnText="Contact Now" btnLink="/contact" />
+            <Button btnText="Contact Now" btnLink="/contact" />
           </div>
         </div>
       </div>
