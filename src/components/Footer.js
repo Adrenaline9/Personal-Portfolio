@@ -14,6 +14,7 @@ const FooterStyle = styled.div`
 }
   
   .container_wrapper {
+    display: flex;
     gap: 3rem;    
     width: 90%;    
     margin: auto;
@@ -93,8 +94,6 @@ export default function Footer() {
                 },
               ]}
             />
-          </div>
-          <div className="footer__col2">
             <FooterCol
               heading="Contact Info"
               links={[

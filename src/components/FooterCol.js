@@ -8,6 +8,7 @@ const ColStyle = styled.div`
     margin-bottom: 2rem;
   }
   li {
+    text-decoration: none;
     margin-bottom: 1rem;
   }
   a {
