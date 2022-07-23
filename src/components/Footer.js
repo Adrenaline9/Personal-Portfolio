@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
+import SocialIcons from './SocialIcons';
+import { FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa';
 
 const FooterStyle = styled.div`
   margin-top: 10rem;
@@ -12,7 +14,13 @@ const FooterStyle = styled.div`
 
   .containers {    display: flex;
 }
-  
+  .heading {          
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--crimson);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
   .container_wrapper {
     display: flex;
     gap: 3rem;    
@@ -113,23 +121,16 @@ export default function Footer() {
             />
           </div>
           <div className="footer__col3">
-            <FooterCol
-              heading="social Links"
-              links={[
-                {
-                  title: 'Facebook',
-                  path: 'https://www.facebook.com/profile.php?id=100074182476935',
-                },
-                {
-                  title: 'Twitter',
-                  path: 'https://twitter.com/Adrenaline_nine?t=TgEas4uagrC_mrC1j60gZg&s=09',
-                },
-                {
-                  title: 'Telegram',
-                  path: 'https://t.me/Adrenaline_Nine',
-                },
-              ]}
-            />
+            <h2 className="heading">Social Icons</h2>              
+            <a href="https://www.facebook.com/profile.php?id=100074182476935" target="_blank" rel="noreferrer">
+            <SocialIcons text="Facebook" icon={<FaFacebook />} /></a>
+                          
+            <a href="https://twitter.com/Adrenaline_nine?t=iUib-BHsczcxO-VzpN8Qeg&s=09" target="_blank" rel="noreferrer">
+            <SocialIcons text="Twitter" icon={<FaTwitter />} /></a>
+            
+            <a href="https://t.me/Adrenaline_Nine" target="_blank" rel="noreferrer">
+            <SocialIcons text="Telegram" icon={<FaTelegram />} />       </a>
+
           </div>
         </div>
       </div>
@@ -139,7 +140,7 @@ export default function Footer() {
             © 2021 - Adrenaline Nine | Designed By{' '}
             <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100074182476935">
               Adrenaline_nine
-            </a>{' '}
+            </a>
           </PText>
         </div>
       </div>
